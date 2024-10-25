@@ -1,0 +1,15 @@
+.Popular
+{
+  width: 100%;
+  color: #2a2a2a;
+  padding: 4rem 6rem;
+}
+.Popular .Title
+{
+  font-size: 48px;
+  text-align: center;
+}
+.Popular .Descrition
+{
+  text-align: center;
+}

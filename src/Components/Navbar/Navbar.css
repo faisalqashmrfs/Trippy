@@ -1,0 +1,66 @@
+.Fq-Navbar
+{
+  width: 95%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  padding: 0px 30px;
+  border-radius: 13px;
+  box-shadow: 0 15px 5px 0 rgba(0, 0, 0, .25);
+  z-index: 9999;
+}
+
+.Fq-Navbar h1
+{
+  font-size: 32px;
+  color: #222;
+  cursor: pointer;
+
+}
+.Fq-Navbar .section-2
+{
+  display: flex;
+}
+.Fq-Navbar .section-2 button
+{
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: all .2s ease-in-out;
+}
+.Fq-Navbar .section-2 button:hover
+{
+  background-color: #222;
+  color: #fff;
+}
+
+.Menu
+{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.Menu li
+{
+  font-size: 19.2px;
+  color: #222;
+  margin: 0 10px;
+  padding: 3px 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.Menu li svg
+{
+  margin-right: 10px;
+}

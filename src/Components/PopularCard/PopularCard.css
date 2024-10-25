@@ -1,0 +1,52 @@
+.SingleCard
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 72px;
+}
+.SingleCardReverse
+{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 72px;
+}
+.Side-1
+{
+  width: 45%;
+}
+.Side-1 h2
+{
+  padding-bottom: 16px;
+}
+.Side-1 p
+{
+  font-size: 18px;
+}
+.Side-2
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.Side-2 img
+{
+  height: 350px;
+  border-radius: 6px;
+}
+.Side-2 img:nth-child(1)
+{
+  width: 49%;
+}
+.Side-2 img:nth-child(2)
+{
+  width: 49%;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
