@@ -1,12 +1,13 @@
 import './Hero.css'
 
-export default function Hero() {
+export default function Hero({Title,x,BackGround}) {
   return (
-    <section className='Hero'>
+    <section className={x ? 'Hero' : 'Hero2'}>
+      <img className='BackGroundImg' src={BackGround} alt="" />
       <div className='Title'>
-        <h2>Your Journey Your Story</h2>
-        <p>Choose Your Favourite Destination.</p>
-        <button>Travel Now</button>
+        <h2>{Title}</h2>
+        {x && <p>Choose Your Favourite Destination.</p>}
+        {x && <button>Travel Now</button>}
       </div>
     </section>
   )

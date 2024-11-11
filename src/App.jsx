@@ -1,17 +1,27 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Hero from './Components/Hero/Hero'
+import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
 import Navbar from './Components/Navbar/Navbar'
-import Popular from './Components/Popular/Popular'
-import Recent from './Components/Recent/Recent'
+import Service from './Pages/Service/Service'
+import Contact from './Pages/Contact/Contact'
+
 
 function App() {
 
+
+
+
   return (
     <>
-    <Navbar />
-    <Hero />
-    <Popular />
-    <Recent/>
+    <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/Service' element={<Service />} />
+        <Route path='/Contact' element={<Contact />} />
+      </Routes>
+
     </>
   )
 }

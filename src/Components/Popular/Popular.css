@@ -7,9 +7,31 @@
 .Popular .Title
 {
   font-size: 48px;
+  width: max-content;
   text-align: center;
 }
 .Popular .Descrition
 {
   text-align: center;
+}
+
+@media(max-width:992px)
+{
+  .Popular .Title
+  {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media(max-width:600px)
+{
+  .Popular .Title
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+  .Popular .Descrition
+  {
+    font-size: 14px;
+  }
 }

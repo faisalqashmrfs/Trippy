@@ -27,7 +27,20 @@
 {
   display: flex;
 }
-.Fq-Navbar .section-2 button
+.Fq-Navbar .section-3
+{
+  display: none;
+}
+.Fq-Navbar .section-4
+{
+  display: flex;
+  flex-direction: row;
+}
+.ClosenBTN
+{
+  display: none;
+}
+.Fq-Navbar button
 {
   border: none;
   border-radius: 6px;
@@ -50,7 +63,18 @@
   align-items: center;
 }
 
-.Menu li
+.Menu li a
+{
+  font-size: 19.2px;
+  margin: 0 10px;
+  padding: 3px 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #222;
+  text-decoration: none;
+}
+.Menu li 
 {
   font-size: 19.2px;
   color: #222;
@@ -63,4 +87,51 @@
 .Menu li svg
 {
   margin-right: 10px;
+}
+@media(max-width: 1030px)
+{
+  .Fq-Navbar .section-3
+  {
+    display: block;
+  }
+  .Fq-Navbar .section-2
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    background-color: #ffffffcc;
+    top: 0px;
+    right: 0px;
+    transition: .6s;
+  }
+  .Fq-Navbar .section-4
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    background-color: #ffffffcc;
+    top: 0px;
+    right: -300px;
+    transition: .6s;
+  }
+  .Menu
+  {
+    flex-direction: column;
+  }
+  .Menu li a
+  {
+    margin: 10px 0;
+  }
+  .ClosenBTN
+  {
+    display: block;
+    margin-top: 10px;
+  }
 }
